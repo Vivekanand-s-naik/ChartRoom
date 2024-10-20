@@ -1,0 +1,72 @@
+/* General body styling */
+body {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    font-family: Arial, sans-serif; /* Font styling */
+    margin: 0;
+    padding: 0;
+}
+
+/* Message box styling */
+.message-box {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Messages container */
+.messages {
+    height: 300px; /* Fixed height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #333; /* Border for the messages area */
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Individual message styling */
+.text {
+    margin-bottom: 10px; /* Space between messages */
+    padding: 5px;
+    border-radius: 5px; /* Rounded corners for messages */
+    background-color: #2a2a2a; /* Background for each message */
+}
+
+/* Muted text styling */
+.muted {
+    font-size: 0.8em; /* Smaller font for timestamps */
+    color: #b0b0b0; /* Lighter color for muted text */
+}
+
+/* Input area styling */
+.inputs {
+    display: flex; /* Use flexbox for alignment */
+}
+
+/* Input field styling */
+input[type="text"] {
+    flex: 1; /* Take up remaining space */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #444; /* Border for the input */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #2a2a2a; /* Input background */
+    color: #e0e0e0; /* Text color */
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px; /* Button padding */
+    margin-left: 10px; /* Space between input and button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

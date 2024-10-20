@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script type="module" src="{{ url_for('static', filename='js/login.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h1>Login</h1>
+            <form id="FormBox">
+                <div class="inputBox">
+                    UserName: <input class="input" type="text" id="name" name="username" required><br>
+                </div>
+                <div class="inputBox">
+                    Password: <input class="input" type="password" id="password" name="password" required><br>
+                </div>
+                <div class="inputBox">
+                    Email: <input class="input" type="email" id="email" name="email" required><br>
+                </div>
+                <div class="inputBox">
+                    <button class="button" class="input" type="submit" id="submit">Login</button>
+                </div>
+            </form>
+            <p id="error-message"></p>
+            <p>Don't have an account? <a href="/register.html">Create one here</a></p>
+<!--            <p>Don't have an account? <a href="templates/register.html">Create one here</a></p>-->
+            <p>UpDate Details ? <a href="update.html">Update here</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

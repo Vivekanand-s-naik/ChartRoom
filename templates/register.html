@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <script type="module" src="register.js" defer></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js" type="module"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h1>Register</h1>
+            <form id="FormBox">
+                <div class="inputBox">
+                    Name: <input class="input" type="text" id="name" name="username" required><br>
+                </div>
+                <div class="inputBox">
+                    Password: <input type="password" id="password" name="password" required><br>
+                </div>
+                <div class="inputBox">
+                    Email: <input type="email" id="email" name="email" required><br>
+                </div>
+                <div class="inputBox">
+                    <button class="button" type="submit" id="submit">Register</button>
+                </div>
+            </form>
+            <p id="error-message"></p>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
